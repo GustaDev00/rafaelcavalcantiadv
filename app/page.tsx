@@ -4,27 +4,29 @@ import { HomeTemplate } from "@/templates/home";
 
 export const metadata: Metadata = {
   title: "Que tipo de serviço está procurando hoje?",
-  description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+  description: "",
   openGraph: {
     url: `${process.env.NEXT_PUBLIC_API_URL}/`,
     title: "Que tipo de serviço está procurando hoje?",
-    description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+    description: "",
     type: "website",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_API_URL}/imgs/logo.png`,
-        alt: "Baterias Galileu Logo",
+        alt: "Logo",
       },
     ],
   },
   twitter: {
     title: "Que tipo de serviço está procurando hoje?",
-    description: "Encontre o serviço que precisar aqui na Baterias Galileu",
+    description: "",
   },
 };
 
 const Home = async () => {
   const data = await listPosts();
+
+  console.log(data);
 
   if (!data.length) return null;
 

@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   },
   assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX,
   trailingSlash: true,
-  output: "export",
   distDir: "build",
   basePath: process.env.NEXT_PUBLIC_ASSET_PREFIX,
 };

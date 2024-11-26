@@ -1,16 +1,26 @@
 import listPosts from "@/api/list-posts";
 import BlogContent from "@/templates/blog-content";
 
-export async function generateStaticParams() {
-  const posts = await listPosts();
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
 
-  return posts.map((post) => ({
-    slug: post.json.link.toLowerCase(),
-  }));
+export async function generateStaticParams() {
+  try {
+    const posts = await listPosts();
+    return posts.map((post) => ({
+      slug: post.json.link.toLowerCase(),
+    }));
+  } catch (error) {
+    console.error("Erro ao listar posts:", error);
+    return [];
+  }
 }
 
-export default async function Page({ params }: any) {
-  const { slug } = params;
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
 
   const posts = await listPosts();
   const post = posts.find(({ json }) => json.link.toLowerCase() === slug);

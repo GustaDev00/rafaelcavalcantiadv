@@ -14,6 +14,7 @@ const BlogContent: FC<BlogContentProps> = ({ post, posts }) => {
         <S.Cta />
         <S.Article>
           <Writer timer={10} />
+          <S.Img src={post.json.link} alt={post.json.title} />
           <Content content={post.json.content} />
         </S.Article>
       </S.Wrapper>
