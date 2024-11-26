@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: any) {
-  const { slug } = await params;
+  const { slug } = params;
 
   const posts = await listPosts();
   const post = posts.find(({ json }) => json.link.toLowerCase() === slug);

@@ -9,5 +9,5 @@ export const formatToLocaleDate = (dateString: string, locale = "pt-BR"): string
 };
 
 // Exemplo de uso
-const formattedDateGerman = formatToLocaleDate("2024-11-26 01:03:29.000000", "de-DE");
-const formattedDateBR = formatToLocaleDate("2024-11-26 01:03:29.000000", "pt-BR");
+// const formattedDateGerman = formatToLocaleDate("2024-11-26 01:03:29.000000", "de-DE");
+// const formattedDateBR = formatToLocaleDate("2024-11-26 01:03:29.000000", "pt-BR");

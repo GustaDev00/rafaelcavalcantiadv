@@ -1,4 +1,3 @@
-import { CustomBr } from "@/components/atoms/custom-br";
 import { FacebookIcon } from "@/components/svgs/facebook";
 import { HomeIcon } from "@/components/svgs/home";
 import { InstagramIcon } from "@/components/svgs/instagram";
