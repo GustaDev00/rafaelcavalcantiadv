@@ -21,6 +21,10 @@ export const Img = styled(LazyImage)`
   object-fit: cover;
   border-radius: 0.8rem;
   margin: 2rem 0 4rem;
+
+  ${mediaMaxWidth("mobile")`
+    height: 30rem;
+  `}
 `;
 
 export const Wrapper = styled.div`
