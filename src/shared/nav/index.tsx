@@ -45,8 +45,10 @@ export default () => {
             </S.HeaderModal>
             <S.Container>
               <S.List>
-                {navigation.items.map((link, index) => (
-                  <S.Item key={index}>{link.title}</S.Item>
+                {navigation.items.map(({ title, href }, index) => (
+                  <S.Item key={index} href={href}>
+                    {title}
+                  </S.Item>
                 ))}
               </S.List>
             </S.Container>
