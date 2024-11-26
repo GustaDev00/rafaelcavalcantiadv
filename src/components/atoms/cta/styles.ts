@@ -7,8 +7,8 @@ export const Cta = styled.a`
   transition: box-shadow 0.4s ease;
 
   color: #fff;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
 
   &:hover {
     box-shadow: 0 1rem 1.5rem 0 rgba(1, 115, 153, 0.2);

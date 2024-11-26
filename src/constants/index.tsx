@@ -6,25 +6,25 @@ import { InstagramIcon } from "@/components/svgs/instagram";
 export default {
   data: {
     navigation: {
-      text: "Seiten",
-      menu: "navigation",
+      text: "Menu",
+      menu: "Navegação",
       items: [
-        { title: "Home", href: "/", icon: HomeIcon },
-        { title: "Blog", href: "/blog" },
-        { title: "Über uns", href: "/portfolio" },
-        { title: "Kontakt", href: "/kontakt" },
+        { title: "Home", href: "https://rafaelcavalcantiadv.com/", icon: HomeIcon },
+        { title: "Blog", href: "/" },
+        { title: "Quem Somos", href: "https://rafaelcavalcantiadv.com/quem-somos/" },
+        { title: "Contato", href: "https://rafaelcavalcantiadv.com/contato/" },
       ],
     },
     contact: [
       {
-        text: "Phone",
-        content: "076 469 28 31",
-        link: "tel:+0764692831",
+        text: "Celular",
+        content: "+55 21 96921-4908",
+        link: "tel:+5521969214908",
       },
       {
         text: "E-Mail",
-        content: "info@trockenbau-dac.ch",
-        link: "mailto:info@fiberweb.ch",
+        content: "contato@rafaelcavalcantiadv.com",
+        link: "mailto:contato@rafaelcavalcantiadv.com",
       },
     ],
     social_share: {
@@ -48,8 +48,8 @@ export default {
       ],
     },
     footer: {
-      text: "Kontakt Informationen",
-      copy: "Copyright © 2024 Ha-Tech GmbH",
+      text: "Contatos",
+      copy: "Copyright © 2024 Rafael Cavalcanti Advogados",
       agency: (
         <>
           Mit 💚 entwickelt von{" "}
@@ -63,11 +63,11 @@ export default {
     },
   },
   home: {
-    title: "Blog FiberWeb",
+    title: "Blog Rafael Cavalcanti",
     description: (
       <>
-        Die HA-Tech Gmbh umfasst ein mittlerweile 14-köpfiges Team und ist tätig in der
-        <CustomBr byViewport="desktop" /> gesamten Deutschschweiz.
+        Advocacia Especializada de proteção e desenvolvimento patrimonial: Temos todos os serviços
+        que você precisa para CRESCIMENTO, BLINDAGEM E RECUPERAÇÃO DO SEU PATRIMÔNIO.
       </>
     ),
   },
@@ -77,11 +77,11 @@ export default {
   },
   time: "minutos de leitura",
   latest: {
-    title: "Lastet Articles",
+    title: "Últimos Artigos",
   },
   cta: {
-    title: "Mehr dazu",
-    text: "Ihm blieb einiges übrig zweifeln? Kontaktieren Sie uns im Augenblick!",
-    href: "#",
+    title: "Fale conosco",
+    text: "Ficou com alguma dúvida? Fale conosco agora mesmo!",
+    href: "https://api.whatsapp.com/send?phone=5521969214908",
   },
 };

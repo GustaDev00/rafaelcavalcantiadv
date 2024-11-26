@@ -4,7 +4,7 @@ import { mediaMaxWidth, mediaMinWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  padding: 3.2rem 0;
+  padding: 1.2rem 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,6 +56,10 @@ export const Item = styled.a`
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
+
+  ${({ theme }) => mediaMaxWidth("isMobileOrTabletVertical")`
+    color: ${theme.black};
+  `}
 `;
 
 export const CtaButton = styled(Cta)`
@@ -79,28 +83,27 @@ export const Button = styled.button`
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.6rem;
   cursor: pointer;
   position: relative;
-  top: 0.5rem;
 `;
 
 export const MenuLine = styled.div`
-  background: #000;
-  height: 0.4rem;
+  background: #fff;
+  height: 0.3rem;
   border-radius: 2rem;
 
   &:first-child {
-    width: 1.55rem;
+    width: 1rem;
     align-self: flex-end;
   }
 
   &:nth-child(2) {
-    width: 3.61rem;
+    width: 3rem;
   }
 
   &:last-child {
-    width: 1.55rem;
+    width: 1rem;
   }
 `;
 

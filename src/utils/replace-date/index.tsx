@@ -1,4 +1,4 @@
-export const formatToLocaleDate = (dateString: string, locale = "de-DE"): string => {
+export const formatToLocaleDate = (dateString: string, locale = "pt-BR"): string => {
   const date = new Date(dateString);
   const options: Intl.DateTimeFormatOptions = {
     day: "2-digit",

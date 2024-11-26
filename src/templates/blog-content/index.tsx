@@ -8,8 +8,6 @@ import Content from "@/components/atoms/content";
 import { LatestArticles } from "@/components/organisms/latest-articles";
 
 const BlogContent: FC<BlogContentProps> = ({ post, posts }) => {
-  console.log(post, posts);
-
   return (
     <S.Blog>
       <S.Wrapper>

@@ -53,8 +53,9 @@ export default () => {
             <S.Line />
             <S.Footer>
               <S.TextFooter>
-                Wie können wir
-                <br /> helfen?
+                Fale conosco
+                <br />
+                agora mesmo!
               </S.TextFooter>
               <S.CtaButtonFooter {...C.cta} />
             </S.Footer>

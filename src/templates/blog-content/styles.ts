@@ -10,7 +10,7 @@ export const Blog = styled.section`
 `}
 
   ${mediaMaxWidth("mobile")`
-  padding: 16rem 2.6rem 0;
+  padding: 10rem 2.6rem 0;
 `}
 `;
 

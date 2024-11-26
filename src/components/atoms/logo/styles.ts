@@ -6,12 +6,11 @@ import { mediaMaxWidth } from "@/utils/media-query";
 export const Link = styled(_Link)``;
 
 export const Img = styled(LazyImage)`
-  width: 20rem;
-  height: 3.1rem;
+  width: 100%;
+  height: 7.2rem;
   object-fit: contain;
 
   ${mediaMaxWidth("mobile")`
-    width: 13.8rem;
-    height: 2.1rem;
+    height: 6.2rem;
   `}
 `;
