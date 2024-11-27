@@ -2,6 +2,10 @@ import { mediaMaxWidth } from "@/utils/media-query";
 import { styled } from "styled-components";
 
 export const Article = styled.article`
+  img {
+    display: none;
+  }
+
   h1 {
     color: ${({ theme }) => theme.richBlack};
     font-size: 4rem;
