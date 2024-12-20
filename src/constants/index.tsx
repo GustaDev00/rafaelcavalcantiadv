@@ -1,5 +1,4 @@
 import { FacebookIcon } from "@/components/svgs/facebook";
-import { HomeIcon } from "@/components/svgs/home";
 import { InstagramIcon } from "@/components/svgs/instagram";
 
 export default {
@@ -8,7 +7,7 @@ export default {
       text: "Menu",
       menu: "Navegação",
       items: [
-        { title: "Home", href: "https://rafaelcavalcantiadv.com/", icon: HomeIcon },
+        { title: "Home", href: "https://rafaelcavalcantiadv.com/" },
         { title: "Blog", href: "/" },
         { title: "Quem Somos", href: "https://rafaelcavalcantiadv.com/quem-somos/" },
         { title: "Contato", href: "https://rafaelcavalcantiadv.com/contato/" },
@@ -27,7 +26,6 @@ export default {
       },
     ],
     social_share: {
-      text: "Folge uns",
       icons: [
         {
           title: "Instagram",
@@ -47,7 +45,6 @@ export default {
       ],
     },
     footer: {
-      text: "Contatos",
       copy: "Copyright © 2024 Rafael Cavalcanti Advogados",
       agency: (
         <>

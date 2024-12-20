@@ -42,7 +42,7 @@ const getImageAndDownload = async () => {
       },
     };
 
-    const apiUrl = `${process.env.NEXT_POST_API_URL}/user/posts`;
+    const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/user/posts`;
     const response = await fetch(apiUrl, options)
       .then((response) => response.json())
       .catch((err) => console.error(err));
