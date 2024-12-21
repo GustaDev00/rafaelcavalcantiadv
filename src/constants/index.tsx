@@ -45,6 +45,7 @@ export default {
       ],
     },
     footer: {
+      text: "Contatos",
       copy: "Copyright © 2024 Rafael Cavalcanti Advogados",
       agency: (
         <>
